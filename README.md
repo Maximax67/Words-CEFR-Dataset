@@ -2,6 +2,14 @@
 
 This project focuses on analyzing and categorizing English words based on their CEFR levels (from A1 to C2). I computed CEFR levels for every valid English word and its corresponding part of speech by by considering various factors including the average levels of other parts of speech for the same word, lemma levels, stem levels, as well as lemma, stem, and word frequencies.
 
+
+## [cefrpy](https://github.com/Maximax67/cefrpy)
+
+Words CEFR Dataset now integrated into the [cefrpy](https://github.com/Maximax67/cefrpy) python module! With a size of 900 KB, [cefrpy](https://github.com/Maximax67/cefrpy) is your go-to resource for independent use or along with [spaCy](https://spacy.io/), empowering you to exclude Named Entities (cities, countries, people names, etc) effortlessly from CEFR analysis.
+
+Here is a demo: https://huggingface.co/spaces/Maximax67/cefrpy-demo
+
+
 ## Example of usage
 
 To perform a basic word CEFR analysis, execute the **Text-Analizer.ipynb** file. This notebook provides a practical demonstration of how to analyze words and determine their corresponding CEFR levels.
@@ -98,7 +106,7 @@ The data processing pipeline, implemented in the **Word-CEFR.ipynb** notebook, i
 
 1. **Incorporating Additional Datasets**: To obtain more precise data, consider parsing the [Octanove Vocabulary profile](https://github.com/openlanguageprofiles/olp-en-cefrj/blob/master/octanove-vocabulary-profile-c1c2-1.0.csv) dataset, which provides C1 and C2 level vocabulary data. However, please note that this dataset is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Also you can parse [World level survey by Zenodo](https://zenodo.org/records/12501) dataset to further enrich the dataset. This dataset, licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/legalcode).
 
-2. **Filtering Personal Names and Geographical Entities**: you can improve result accuracy by implementing mechanisms to identify and exclude personal names, countries, cities, and other such entities from displaying CEFR levels. This refinement can help ensure that the analysis focuses solely on linguistic content.
+2. **Filtering Personal Names and Geographical Entities**: you can improve result accuracy by implementing mechanisms to identify and exclude personal names, countries, cities, and other such entities from displaying CEFR levels. This refinement can help ensure that the analysis focuses solely on linguistic content. **Already done in my [cefrpy](https://github.com/Maximax67/cefrpy) project**.
 
 ## Dataset files included
 
